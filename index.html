@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="pinkshardIcon.png" class="notPixelated">
+    <title>Pink shard games</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top pinkBg" style="height: 10vh;">
+      <div class="container">
+        <div class="row">
+          <p class="navbar-brand whiteText pixel-font" onclick="home()" id="home" style="color: #fff27d">Home</p>
+        </div>
+        <div class="row pixel-font whiteText">
+          <p class="navbar-brand whiteText pixel-font" onclick="aboutMe()" id="about">About me</p>
+        </div>
+        <div class="row pixel-font whiteText">
+          <p class="navbar-brand whiteText pixel-font" onclick="projects()" id="projects">Projects</p>
+        </div>
+      </div>
+    </nav>
+    <div style="height: 10vh;"></div> <!-- equalizer -->
+    <div class="background pinkBg"> <!--home-->
+        <img src="pinkshardlogoTiny.png" class="center notPixelated" style="height: 80vh;">
+    </div>
+    <div class="separator pink-to-white-bg"></div>
+    <div class="pixel-font"  id="aboutMe">
+        <div class="container">
+          <h1 style="text-align: center !important;">About me</h1>
+          
+            <p>My name is <span style="color: #ff63ae;">Carlos Pozuelo</span>, and I am a software engineer in process. I've always wanted to create my own videogame, and, after toying around with Unity Engine for almost a year now,
+              I've decided I should start a bigger project. Thus, <span style="color: #ff63ae;">Pink Shard Games</span> was born! </p>
+            <p>Even if i'm not an expert yet, I'd like to use this blog to showcase my progress. Right now, I'm so excited to be working on <span style="color: #ff63ae;">Evertower Lite</span>, my first videogame which, I hope, will come out soon.</p>
+            <p>I love learning new stuff, so, if you've got any feedback, <span style="color: #ff63ae;">feel free to contact me via the links below !</span></p>
+      </div>
+    </div>
+    <div class="separator white-to-pink-bg">
+
+    </div>
+    <div class="pinkBg" id="projectsPage">
+      <div class="container">
+        <h1 class="pixel-font" style="color:#fff27d">Evertower Lite</h1>
+        <div class="pixel-font whiteText">
+          <h3><i>A random dungeon crawler where you have to keep dying to climb to the top of the mysterious tower! who knows what lies above?</i></h3>
+          <img src="tower.png" class="center notPixelated" style="height: 50vh;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

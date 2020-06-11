@@ -1,0 +1,69 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.background{
+    position: relative;
+    height: 90vh;
+    background-repeat: no-repeat;
+}
+
+.pink-to-white-bg{
+    background-image: linear-gradient(#ff63ae, white);
+}
+
+.white-to-pink-bg{
+    background-image: linear-gradient( white, #ff63ae);
+}
+
+.separator{
+    height: 30vh;
+}
+
+.pinkBg{
+    background-color: #ff63ae;
+}
+@font-face {
+    font-family: 'silkscreennormal';
+    src: url('slkscr-webfont.eot');
+    src: url('slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('slkscr-webfont.woff2') format('woff2'),
+         url('slkscr-webfont.woff') format('woff'),
+         url('slkscr-webfont.ttf') format('truetype'),
+         url('slkscr-webfont.svg#silkscreennormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.pixel-font{
+    font-family: 'silkscreennormal' !important;
+}
+
+
+.whiteText{
+    color: white;
+}
+
+a:link, a:visited, a:hover, a:active{
+    color:#fff27d;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 15vw;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+.notPixelated{
+    image-rendering: pixelated;
+}
+
