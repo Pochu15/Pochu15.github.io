@@ -1,5 +1,6 @@
 function aboutMe(){
     scrollTo(0, getAboutMeHeight())
+    turnAboutYellow()
 }
 
 function getAboutMeHeight(){
@@ -16,28 +17,42 @@ function getProjectsHeight(){
 
 function home(){
     scrollTo(0,0)
+    turnHomeYellow()
 }
 
 function projects(){
     scrollTo(0, getProjectsHeight())
+    turnProjectsYellow()
+}
+
+function turnHomeYellow(){
+    document.getElementById("home").style.color = "#fff27d"
+    document.getElementById("about").style.color = "white"
+    document.getElementById("projects").style.color = "white"
+}
+
+function turnAboutYellow(){
+    document.getElementById("home").style.color = "white"
+    document.getElementById("about").style.color = "#fff27d"
+    document.getElementById("projects").style.color = "white"
+}
+
+function turnProjectsYellow(){
+    document.getElementById("home").style.color = "white"
+    document.getElementById("about").style.color = "white"
+    document.getElementById("projects").style.color = "#fff27d"
 }
 
 window.addEventListener('scroll', () => {
     if(window.pageYOffset < getAboutMeHeight()) {
         // HOME
-        document.getElementById("home").style.color = "#fff27d"
-        document.getElementById("about").style.color = "white"
-        document.getElementById("projects").style.color = "white"
+        turnHomeYellow()
     } else if (window.pageYOffset < getProjectsHeight()){
         // ABOUT ME
-        document.getElementById("home").style.color = "white"
-        document.getElementById("about").style.color = "#fff27d"
-        document.getElementById("projects").style.color = "white"
+        turnAboutYellow()
     } else {
         // PROJECTS
-        document.getElementById("home").style.color = "white"
-        document.getElementById("about").style.color = "white"
-        document.getElementById("projects").style.color = "#fff27d"
+        turnProjectsYellow()
     }
 });
 

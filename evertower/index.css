@@ -1,7 +1,12 @@
 html {
     scroll-behavior: smooth;
-    background-color: #ff63ae;
+    background-color: #fbc02d;
   }
+
+
+.orange{
+    color: #fbc02d;
+}
 
 .background{
     position: relative;
@@ -21,20 +26,30 @@ html {
     height: 30vh;
 }
 
+.pink{
+    color: #ff63ae;
+}
+
+.blue-bg{
+    background-color: #2D63FA;
+}
+
 .pinkBg{
     background-color: #ff63ae;
 }
 
-
+.orangeBg{
+    background-color: #fbc02d;
+}
 
 @font-face {
     font-family: 'silkscreennormal';
-    src: url('slkscr-webfont.eot');
-    src: url('slkscr-webfont.eot?#iefix') format('embedded-opentype'),
-         url('slkscr-webfont.woff2') format('woff2'),
-         url('slkscr-webfont.woff') format('woff'),
-         url('slkscr-webfont.ttf') format('truetype'),
-         url('slkscr-webfont.svg#silkscreennormal') format('svg');
+    src: url('../slkscr-webfont.eot');
+    src: url('../slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../slkscr-webfont.woff2') format('woff2'),
+         url('../slkscr-webfont.woff') format('woff'),
+         url('../slkscr-webfont.ttf') format('truetype'),
+         url('../slkscr-webfont.svg#silkscreennormal') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -43,12 +58,19 @@ html {
     font-family: 'silkscreennormal' !important;
 }
 
+.enfasis{
+    color: black;
+}
 
 .whiteText{
     color: white;
 }
 
-a:link, a:visited, a:hover, a:active{
+a:link, a:active, a:visited{
+    color:white;
+}
+
+a:hover{
     color:#fff27d;
 }
 
