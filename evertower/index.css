@@ -14,6 +14,10 @@ html {
     background-repeat: no-repeat;
 }
 
+.orange-to-white-bg{
+    background-image: linear-gradient(#fbc02d, white);
+}
+
 .pink-to-white-bg{
     background-image: linear-gradient(#ff63ae, white);
 }
