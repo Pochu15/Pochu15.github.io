@@ -26,10 +26,72 @@
       </div>
     </nav>
     <div style="height: 10vh;"></div> <!--equalizer-->
-    <!-- The project -->
     <div class="orangeBg" id="theproject">
       <div class="container pixel-font">
         <h1 class="text-center">Development updates</h1>
+        <!--
+        <nav aria-label="Updates">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link pagination-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link pagination-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link pagination-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+        -->
+        <!-- updates -->
+        <hr>
+        <h2 class="float-left enfasis">Hello world! update</h2> <h2 class="text-right enfasis">15/6/2020</h2>
+        <hr>
+        <div class="whiteText">
+          <p>Testing, testing... it works! Welcome to the first Evertower Lite Development post! In these posts, I'll explain the changes I made to the game as well as the features I plan to develop.</p>
+          <h2>What I've done</h2>
+          <p>So far, <span class="enfasis">Evertower Lite</span> has:</p>
+          <ul>
+            <li>A <span class="enfasis">permanent upgrades system,</span> which allows you to gain permanent buffs like extra health or unlock new spells.</li>
+            <li>An <span class="enfasis">inventory system, </span> with support for both passive and active items.</li>
+            <li>A <span class="enfasis">spell system.</span> Each character has a deck where spells are held. At the beggining of each battle, that deck is shuffled. Players can only use spells from their hands (and will draw spells at the beggining of each turn), and these spells are shuffled back in the deck after finishing the battle.
+              <ul>
+                <li>Spells, items and permanent upgrades work with a <span class="enfasis">list of effects.</span> Each spell has a list of effects that are activated when the spell is casted.</li>
+              </ul>
+            </li>
+            <li>A <span class="enfasis">random dungeon generation system,</span> built so that it's easy to add dungeon elements to the generation pool. Each dungeon currently has:</li>
+            <ul>
+              <li><span class="enfasis">Chests,</span> which will give the player loot.</li>
+              <li><span class="enfasis">Enemies,</span> which will trigger battle mode.</li>
+              <li><span class="enfasis">Doors,</span> which will take you from one point in the dungeon to another.</li>
+              <li><span class="enfasis">Crafting tables,</span> which will allow you to craft unlocked recipes.</li>
+            </ul>
+            <li>A fully functioning <span class="enfasis">Battle system.</span>
+              <ul>
+                <li>Although no items in the game currently implement this, each battling character has an <span class="enfasis">event system.</span> As for now, there's only <span class="enfasis">six battle-events:</span> <i>On battle start, 
+                    On turn start, On turn end, After taking damage, Before casting a spell and after casting a spell. </i> When any of this events is triggered, it'll activate all of the effects associated to it. This opens the door
+                    to very interesting features like <span class="enfasis">poison damage,</span> which would cause damage at the end of each turn, or getting healed up after dealing damage. <span class="enfasis">The possibilities this enables are endless.</span>
+              </li>
+              </ul>
+            </li>
+            <li>
+              <span class="enfasis">Data persistancy.</span> Although there's still room for improvement, player data is stored. Concretely, a <span class="enfasis">permanent upgrades data</span> file will be created, and will be loaded at the beggining of the game. If the player quits while doing a dungeon, data will also be stored. There's no save button yet,
+              but data is stored when you end a battle, when you open a chest or when you craft something.
+              <span class="enfasis">Dying will erase your dungeon data.</span>
+            </li>
+          </ul>
+          <h2>The contents of the game</h2>
+          There's currently not much content in the game, as there's only five different spells, five different items, two enemy types and 10 different permanent upgrades. Here's a peek at some artwork!
+          <img src="../pictures/pasiveItems0.png" class="notPixelated" style="min-width: 30%;">
+          <img src="../pictures/thunderSpell.png" class="notPixelated" style="min-width: 30%;">
+          <img src="../pictures/permanentUpgrades.png" class="notPixelated" style="min-width: 30%;">
+          <h2>What I want to do next</h2>
+          <ul>
+            <li>Add more <span class="enfasis">content</span> to the game. New spells, new items, new permanent upgrades, new enemies...</li>
+            <li>Finish (or rather, start) the <span class="enfasis">Shopping system,</span> allowing the player to spend gold to get items from a random pool</li>
+            <li>Add <span class="enfasis">boss fights,</span> and different zones with <span class="enfasis">different structure and different enemies.</span></li>
+            <li>Add multiple levels (A stair to the next level), and make the enemies stronger based on the current level.</li>
+            <li>Add <span class="enfasis">Legendary Items</span> to the game. Curious? Here's a design!</li>
+            <img src="../pictures/legendaryItems.gif" class="center notPixelated" style="min-width: 50%;">
+            <li>Add new elements to the basement. I'd like to have something to allow the player to customize its starting deck, and maybe an <span class="enfasis">anvil</span> to allow the player to upgrade its spells.</li>
+
+          </ul>
+        </div>
       </div>
     </div>
 

@@ -63,11 +63,15 @@ html {
 }
 
 .enfasis{
-    color: black;
+    color: #34515e;
 }
 
 .whiteText{
-    color: white;
+    color: #3e3e3e;
+}
+
+.pagination-link{
+    color:black !important;
 }
 
 a:link, a:active, a:visited{
