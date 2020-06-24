@@ -43,6 +43,16 @@ function turnProjectsYellow(){
     document.getElementById("projects").style.color = "#fff27d"
 }
 
+jQuery(window).load(function() {
+ 
+    /*
+        Stop carousel
+    */
+    $('.carousel').carousel('pause');
+ 
+});
+
+
 window.addEventListener('scroll', () => {
     if(window.pageYOffset < getAboutMeHeight()) {
         // HOME
