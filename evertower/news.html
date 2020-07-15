@@ -39,59 +39,158 @@
         </nav>
         -->
         <!-- updates -->
-        <hr>
-        <h2 class="float-left enfasis">Hello world! update</h2> <h2 class="text-right enfasis">15/6/2020</h2>
-        <hr>
-        <div class="whiteText">
-          <p>Testing, testing... it works! Welcome to the first Evertower Lite Development post! In these posts, I'll explain the changes I made to the game as well as the features I plan to develop.</p>
-          <h2>What I've done</h2>
-          <p>So far, <span class="enfasis">Evertower Lite</span> has:</p>
-          <ul>
-            <li>A <span class="enfasis">permanent upgrades system,</span> which allows you to gain permanent buffs like extra health or unlock new spells.</li>
-            <li>An <span class="enfasis">inventory system, </span> with support for both passive and active items.</li>
-            <li>A <span class="enfasis">spell system.</span> Each character has a deck where spells are held. At the beggining of each battle, that deck is shuffled. Players can only use spells from their hands (and will draw spells at the beggining of each turn), and these spells are shuffled back in the deck after finishing the battle.
-              <ul>
-                <li>Spells, items and permanent upgrades work with a <span class="enfasis">list of effects.</span> Each spell has a list of effects that are activated when the spell is casted.</li>
-              </ul>
-            </li>
-            <li>A <span class="enfasis">random dungeon generation system,</span> built so that it's easy to add dungeon elements to the generation pool. Each dungeon currently has:</li>
-            <ul>
-              <li><span class="enfasis">Chests,</span> which will give the player loot.</li>
-              <li><span class="enfasis">Enemies,</span> which will trigger battle mode.</li>
-              <li><span class="enfasis">Doors,</span> which will take you from one point in the dungeon to another.</li>
-              <li><span class="enfasis">Crafting tables,</span> which will allow you to craft unlocked recipes.</li>
-            </ul>
-            <li>A fully functioning <span class="enfasis">Battle system.</span>
-              <ul>
-                <li>Although no items in the game currently implement this, each battling character has an <span class="enfasis">event system.</span> As for now, there's only <span class="enfasis">six battle-events:</span> <i>On battle start, 
-                    On turn start, On turn end, After taking damage, Before casting a spell and after casting a spell. </i> When any of this events is triggered, it'll activate all of the effects associated to it. This opens the door
-                    to very interesting features like <span class="enfasis">poison damage,</span> which would cause damage at the end of each turn, or getting healed up after dealing damage. <span class="enfasis">The possibilities this enables are endless.</span>
-              </li>
-              </ul>
-            </li>
-            <li>
-              <span class="enfasis">Data persistancy.</span> Although there's still room for improvement, player data is stored. Concretely, a <span class="enfasis">permanent upgrades data</span> file will be created, and will be loaded at the beggining of the game. If the player quits while doing a dungeon, data will also be stored. There's no save button yet,
-              but data is stored when you end a battle, when you open a chest or when you craft something.
-              <span class="enfasis">Dying will erase your dungeon data.</span>
-            </li>
-          </ul>
-          <h2>The contents of the game</h2>
-          There's currently not much content in the game, as there's only five different spells, five different items, two enemy types and 10 different permanent upgrades. Here's a peek at some artwork!
-          <img src="../pictures/pasiveItems0.png" class="notPixelated" style="min-width: 30%;">
-          <img src="../pictures/thunderSpell.png" class="notPixelated" style="min-width: 30%;">
-          <img src="../pictures/permanentUpgrades.png" class="notPixelated" style="min-width: 30%;">
-          <h2>What I want to do next</h2>
-          <ul>
-            <li>Add more <span class="enfasis">content</span> to the game. New spells, new items, new permanent upgrades, new enemies...</li>
-            <li>Finish (or rather, start) the <span class="enfasis">Shopping system,</span> allowing the player to spend gold to get items from a random pool</li>
-            <li>Add <span class="enfasis">boss fights,</span> and different zones with <span class="enfasis">different structure and different enemies.</span></li>
-            <li>Add multiple levels (A stair to the next level), and make the enemies stronger based on the current level.</li>
-            <li>Add <span class="enfasis">Legendary Items</span> to the game. Curious? Here's a design!</li>
-            <img src="../pictures/legendaryItems.gif" class="center notPixelated" style="min-width: 50%;">
-            <li>Add new elements to the basement. I'd like to have something to allow the player to customize its starting deck, and maybe an <span class="enfasis">anvil</span> to allow the player to upgrade its spells.</li>
-
-          </ul>
+        <div><!--
+          
+          -->
         </div>
+
+        <div class="accordion" id="accordionExample">
+          <div>
+            <div id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h3 class="float-left enfasis">The legendary update</h3><h2 class="text-right enfasis">15/7/2020</h2><hr>
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="whiteText container">
+                <p>Hello, and thanks for reading the second devolepment post of Evertower Lite! July has been a busy month in which I added a lot of content. So, without further ado, let's review all the changes I've done!</p>
+                <h2>Shops</h2>
+                <p>Now the dungeons also generate shops! Here, you will be able to spend gold by purchasing items. You will also be able to purchase <span class="enfasis">Legendary items</span>, a new addition to the game which I'll talk about later.</p>
+                <img class="center w-75" src="../pictures/second post/zahara.gif">
+                <p><span class="enfasis"> Zahara</span>, the vendor, will offer the player three random items, and a <span class="enfasis">legendary</span> one.</p>
+
+                <h2>Legendary Items</h2>
+                <p>During this month, I wanted to add more content to the game. The biggest addition is, with no doubt, legendary items.</p>
+                <p>Legendary items are very powerful items which will shape your run. They provide a huge advantage, but sometimes they'll force you to change your deck a bit to make the most out of them. This encourages the player to try new strategies each run, thus making each run feel unique. Here's a list of the items I've created!</p>
+                
+                <ul>
+                  <li><span class="enfasis">Uurmi's urn.</span> This item will summon a companion to help you. Uurmi will cast a random spell from its pool at the beggining of your turn. This item is really good, but it's not very reliable, as the action Uurmi takes is random.</li>
+                  <ul><li>
+                    Right now, Uurmi can give you a shield, deal damage to a random target or recover a small ammount of mana. However, I'm planning to add more spells to its pool to make it more random.
+                  </li></ul>
+                  <li><span class="enfasis">Giant scepter.</span> This item will give you a huge damage boost, but will make your spells cost twice as much.</li>
+                  <li><span class="enfasis">Ancient tome</span>. This item will transform all the mana you spend in arcane spells into a <span class="enfasis">shield.</span> This effect obviously encourages the player to build its deck around arcane spells.</li>
+                  <li><span class="enfasis">Neverending glass</span>. This glass will recover health and mana at the end of your turn, <span class="enfasis">but only if you're shielded.</span></li>
+                  <li><span class="enfasis">The grave digger.</span> This shovel will heal you a small ammount of health whenever an enemy dies.</li>
+                  <li><span class="enfasis">Hero's lost sword.</span> This sword will give you a 10% damage boost at the start of each turn while battling. This item becomes really useful on long battles.</li>
+                </ul>
+
+                <p>The only way to obtain legendary items now is by purchasing them on a shop. However, you don't get to pick what item you buy; you'll get one random instead. Additionaly, each legendary item in your backpack increases the cost of future legendary items.</p>
+
+                <h2>Even more content</h2>
+                <p>I've added a ton of spells this month, and I've also added a new element, <span class="enfasis">fire,</span> which focuses on dealing damage over time.</p>
+                <ul>
+                  <h4>New arcane spells</h4>
+                  <li><span class="enfasis">Seeker's trap, </span>a fast spell (doesn't end your turn when you use it) which decreases an enemy defense by 40% until the start of its turn.</li>
+                  <li><span class="enfasis">Magic bubble, </span>a spell which will give you 60 Shield points, and will increase your defense by 20% while you're shielded.</li>
+                  <h4>New tempest spells</h4>
+                  <li><span class="enfasis">Bifurcated lightning,</span> a powefull spell that deals 70 damage to an enemy, and any excess damage is dealt to all other enemies.</li>
+                  <li><span class="enfasis">Sparkling armour</span>, a cheap spell that will zap your enemies when they attack you, dealing them 20 damage.</li>
+                  <h4>New fire spells</h4>
+                  <li><span class="enfasis">Fireball,</span> a cheap spell (15 mana) that deals 30 damage to a target, and another 30 over 3 turns.</li>
+                  <li><span class="enfasis">Inferno,</span> a really expensive spell which deals 40 damage to a target and then 40 damage to all targets. It also adds a 60 damage burn (20 damage each turn during 3 turns) to all enemies.</li>
+                </ul>
+                <img src="../pictures/second post/spells 2.png" class="center h-30 notPixelated">
+                <p>Of course, all these spells have to be unlocked from <span class="enfasis">the bookstand.</span> This brings the total of spells currently in the game to eleven, and I'm panning to add more on each update</p>
+
+                <h2>Minor changes</h2>
+
+                <p>I added a shield system. Being shielded temporarily increases your health points. Shield is lost at the end of each battle.</p>
+
+                <p>I reworked the armour system. It used to have a cap (70% max armour) to prevent the player from achieving a 100% resistance, which would break the game. Howevewer, this would make defensive items useless, as they will be pointless once you reached the maximum resistance value.
+                  The solution was to make armour items less impactful the more armour you have. For example, a <span class="enfasis">Hogo stone</span> with 0% resistance will increase your resistance to 10%, while the same item with 50% resistance will only increase it to 55%.</p>
+
+                <p>I added new permanent upgrades, this time, to boost your damage. Here's some art!</p>
+                <img src="../pictures/second post/permanentUpgradesDamage.png" class="w-100 notPixelated center">
+
+                <h2>What to expect from future updates</h2>
+                <p>Whew, we've reach the end! Thank you for reading this! I've created a twitter account in which I will post my progress more often than here. Go follow me on <a href="https://www.twitter.com/pinkshardgames" target="blank">@pinkshardgames</a>!</p>
+                <p>...Spam aside, next update will be probably smaller than this one, as I'm going to be a bit busy this month. Here's what I'd like to do next:</p>
+                <ul>
+                  <li><span class="enfasis">Infinite dungeons;</span> a stair to the next level which would increase the dungeon's difficulty. This would open the possibility to add boss fights every two or three levels,
+                    which would reward you with <span class="enfasis">legendary items,</span> and, maybe, with <span class="enfasis">legendary spells</span> as well.</span></li>
+                    <ul><li>Sadly, boss fights are going to take a while, as there's still so much left to do.</li></ul>
+                    <li>New <span class="enfasis">spells and elements.</span> I want to have a great pool of spells to choose. The next element is going to be <span class="enfasis">Ice.</span></li>
+                    <li>New <span class="enfasis">legendary items</span>, as I believe they're the funniest part of the game. I want to see what kind of crazy synergies I can create, and to do this, I'll need plenty of items!</li>
+                    <li>New enemies. At least two of them. I never really focused on adding more, but it's kinda boring to always fight against the same monsters.</li>
+                    <li>A pause menu, which would allow you to end the run at any time or to modify your starting deck if you're not currently on a run.</li>
+                </ul>
+
+                <p>Aaaand... that about wraps it up! See you next month! <p>Carlos.</p></p>
+
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h2 class="float-left enfasis">Hello world! update</h2> <h2 class="text-right enfasis">15/6/2020</h2><hr>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="whiteText">
+                <p>Testing, testing... it works! Welcome to the first Evertower Lite Development post! In these posts, I'll explain the changes I made to the game as well as the features I plan to develop.</p>
+                <h2>What I've done</h2>
+                <p>So far, <span class="enfasis">Evertower Lite</span> has:</p>
+                <ul>
+                  <li>A <span class="enfasis">permanent upgrades system,</span> which allows you to gain permanent buffs like extra health or unlock new spells.</li>
+                  <li>An <span class="enfasis">inventory system, </span> with support for both passive and active items.</li>
+                  <li>A <span class="enfasis">spell system.</span> Each character has a deck where spells are held. At the beggining of each battle, that deck is shuffled. Players can only use spells from their hands (and will draw spells at the beggining of each turn), and these spells are shuffled back in the deck after finishing the battle.
+                    <ul>
+                      <li>Spells, items and permanent upgrades work with a <span class="enfasis">list of effects.</span> Each spell has a list of effects that are activated when the spell is casted.</li>
+                    </ul>
+                  </li>
+                  <li>A <span class="enfasis">random dungeon generation system,</span> built so that it's easy to add dungeon elements to the generation pool. Each dungeon currently has:</li>
+                  <ul>
+                    <li><span class="enfasis">Chests,</span> which will give the player loot.</li>
+                    <li><span class="enfasis">Enemies,</span> which will trigger battle mode.</li>
+                    <li><span class="enfasis">Doors,</span> which will take you from one point in the dungeon to another.</li>
+                    <li><span class="enfasis">Crafting tables,</span> which will allow you to craft unlocked recipes.</li>
+                  </ul>
+                  <li>A fully functioning <span class="enfasis">Battle system.</span>
+                    <ul>
+                      <li>Although no items in the game currently implement this, each battling character has an <span class="enfasis">event system.</span> As for now, there's only <span class="enfasis">six battle-events:</span> <i>On battle start, 
+                          On turn start, On turn end, After taking damage, Before casting a spell and after casting a spell. </i> When any of this events is triggered, it'll activate all of the effects associated to it. This opens the door
+                          to very interesting features like <span class="enfasis">poison damage,</span> which would cause damage at the end of each turn, or getting healed up after dealing damage. <span class="enfasis">The possibilities this enables are endless.</span>
+                    </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="enfasis">Data persistancy.</span> Although there's still room for improvement, player data is stored. Concretely, a <span class="enfasis">permanent upgrades data</span> file will be created, and will be loaded at the beggining of the game. If the player quits while doing a dungeon, data will also be stored. There's no save button yet,
+                    but data is stored when you end a battle, when you open a chest or when you craft something.
+                    <span class="enfasis">Dying will erase your dungeon data.</span>
+                  </li>
+                </ul>
+                <h2>The contents of the game</h2>
+                There's currently not much content in the game, as there's only five different spells, five different items, two enemy types and 10 different permanent upgrades. Here's a peek at some artwork!
+                <img src="../pictures/pasiveItems0.png" class="notPixelated" style="min-width: 30%;">
+                <img src="../pictures/thunderSpell.png" class="notPixelated" style="min-width: 30%;">
+                <img src="../pictures/permanentUpgrades.png" class="notPixelated" style="min-width: 30%;">
+                <h2>What I want to do next</h2>
+                <ul>
+                  <li>Add more <span class="enfasis">content</span> to the game. New spells, new items, new permanent upgrades, new enemies...</li>
+                  <li>Finish (or rather, start) the <span class="enfasis">Shopping system,</span> allowing the player to spend gold to get items from a random pool</li>
+                  <li>Add <span class="enfasis">boss fights,</span> and different zones with <span class="enfasis">different structure and different enemies.</span></li>
+                  <li>Add multiple levels (A stair to the next level), and make the enemies stronger based on the current level.</li>
+                  <li>Add <span class="enfasis">Legendary Items</span> to the game. Curious? Here's a design!</li>
+                  <img src="../pictures/legendaryItems.gif" class="center notPixelated" style="min-width: 50%;">
+                  <li>Add new elements to the basement. I'd like to have something to allow the player to customize its starting deck, and maybe an <span class="enfasis">anvil</span> to allow the player to upgrade its spells.</li>
+    
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      
+
+
+
       </div>
     </div>
 
