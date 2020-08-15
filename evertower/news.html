@@ -46,6 +46,112 @@
 
         <div class="accordion" id="accordionExample">
           <div>
+            <div id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  <h3 class="float-left enfasis">The infinite upgrade</h3><h2 class="text-right enfasis">15/8/2020</h2><hr>
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="whiteText container">
+                <p>Hello! I'm Carlos and you're reading the third development update of Evertower Lite. As I said in last post, this month has been way less intense than last one. 
+                  Sadly, I couldn't implement all the things I wanted to yet, but I still made much progress. So, let's get started!
+                </p>
+                <h2>Infinite gameplay</h2>
+                <p>Now, dungeons will generate a door to the next level! Crossing this door will trigger dungeon generation again, refreshing the dungeon. It'll also increase the difficulty of the dungeon,
+                increasing some stats of the monsters that you'll have to fight. It also increases their loot.</p>
+                <p>Each monster is affected by difficulty in a different way. For example, Blob will gain resistance and extra HP while Bat swarms will gain extra damage and extra healing multiplier.
+                  This makes each enemy feel more unique.
+                </p>
+                <img src="../pictures/third post/stairs.jpeg" class="center w-75">
+                <h2>Hold on!</h2>
+                <p>As you can see in the screenshot above, there's now a pause button, which lets you pause the game! In this pause menu, you'll be able to exit the run at any time. And you'll also be able to <span class="enfasis">edit your starting deck</span>
+                  if you're not currently on a run.</p>
+                  <img src="../pictures/third post/pause.jpeg" class="w-50"><img src="../pictures/third post/warning.jpeg" class="w-50">
+                <h2>Did you say deck edit?</h2>
+                <p>Yes! After half a year of development, you can finally edit your starting deck. To edit it, you'll have to <span class="enfasis">Unlock a new permanent upgrade</span>, which will allow you to enter
+                the deck editing panel. Once in this panel, you'll be able to create a starting deck with the cards that you've already unlocked.</p>
+                <p>To make it fair (...to prevent the player from creating an overpowered deck), you'll
+                have a limit of 136 magic dust, meaning that you can add as many cards as you want, as long as you don't surpass the dust limit. And if 136 dust doesn't seem enough, well, don't worry!
+                With the help of the new <span class="enfasis">permanent upgrades</span>, you'll be able to <span class="enfasis">increase this number up to 776!</span></p>
+                <div id="carouselThirdPost" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="../pictures/third post/deck before.jpeg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="../pictures/third post/editing.jpeg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="../pictures/third post/deck after.jpeg" alt="Third slide">
+                    </div>
+                  </div>
+                </div>
+
+                <h2>New content!</h2>
+                  <h3><i>New monsters</i></h3>
+                  <p>I've added two new enemies to the game!</p>
+                  <ul>
+                    <li><span class="enfasis">Cave spider:</span> Every game needs a spider, right? This little fella has two attacks:
+                      <ul>
+                        <li>Spider bomb: Deal 20 damage</li>
+                        <li>Bite: Deal 20 damage and <span class="enfasis">Poison</span> the target, dealing an extra 10 damage over 5 turns.</li>
+                      </ul>
+                      This monster can deal a lot of damage with its poison, as it can stack multiple times. Poison lasts only one battle.<br>
+                      This monster has 80 HP, and gains 30 extra HP and 20% extra damage with each level.
+                    </li>
+                    <li><span class="enfasis">Extinguish-bot:</span> A fire extinguisher is attacking you? Well, you must be <span class="enfasis">lit!</span>
+                      <ul>
+                        <li>Extinguish: Deal 25 damage</li>
+                        <li>Shield nova: Grant 20 shield points to all your team</li>
+                      </ul>
+                      You might want to prioritize this monster, as you don't want it shielding all of its allies. It also deals a lot of damage with its attack!<br>
+                      This monster only has 40 HP. It gains 20 extra HP, 10% extra damage and<span class="enfasis"> the power of Shield nova increases by 20</span> with each level.
+                    </li>
+                  </ul>
+                  <img class="center w-75" src="../pictures/third post/monsters.jpeg">
+                  <h3><i>New permanent upgrades</i></h3>
+                  <p>As mentioned before, you can now unlock deck editing and gain more dust to your starting deck with new permanent upgrades.</p>
+                  <p>You can also increase your starting hand size and your maximum hand size, from (2-3) to (5-7), with two new permanent upgrades.</p>
+                  <h3><i>New spells</i></h3>
+                  <p>I didn't want to include this as first, as I had planned to add <span class="enfasis">eleven</span> new spells, but I only had time to add three. Although I'm still working on this, here's what I've been able to implement so far!
+                    <ul>
+                      <li>
+                        <span class="enfasis">Meditate:</span> (Arcane, 35 Mana) Remove up to three negative effects (like poison), and gain 10% of your total HP as a shield.
+                      </li>
+                      <li><span class="enfasis">Infinite knowledge:</span> (Arcane, 20 Mana, Fast) Draw three cards.</li>
+                      <li><span class="enfasis">Tornado:</span> (Tempest, 40 Mana, Fast) Deal 80 damage to an enemy. If it dies, recover 10 Mana and return this to your hand.</li>
+                    </ul>
+
+                    <h2>Minor changes</h2>
+                    <ul>
+                      <li>Discharge won't heal anymore; it'll instead grant you a shield based on the damage you did. (Tempest, 20 Mana, Fast) Deal 20 damage, <span class="enfasis"> gain all the damage you did as a shield.</span></li>
+                      <li>Resistance has been slightly nerfed again.</li>
+                      <li>Bat swarm's spells had their damage increased.</li>
+                      <li>Tempest boomerang's damage has been adjusted, from 40/50/75 to <span class="enfasis">50/60/75</span></li>
+                    </ul>
+                  <h2>What to expect from future updates</h2>
+                  <p>The game's already looking good! I think its about time to <span class="enfasis">ass some polish.</span> So, this is my checklist for what I want to do next.</p>
+                  <ul>
+                    <li><span class="enfasis">Music! Sounds!</span> Right now, the game doesn't play any sound at all. I've never created any sound effect at all, let alone a music piece. But it is about time we change this...!</li>
+                    <li>More <span class="enfasis">content. Much more, actually.</span> I still have some spells planned, and some other legendary items which should make it to the next update.</li>
+                    <li><span class="enfasis">Boss fights!</span> Maybe not in the next update, but this certainly is something that has to come. I should start preparing everything to implement this, which, honestly, shouldn't be that hard.</li>
+                    <li><span class="enfasis">Polishment, in general!</span></li>
+                  </ul>
+
+                  
+                  <p>The game is reaching a point where it is <span class="enfasis">playable and somewhat enjoyable.</span> This is great!
+                  I don't have a big audience yet, and I haven't received much feedback either. I want to release a beta soon, maybe in two months from now.
+                  But <span class="enfasis">I do need people</span> to try it, other than my friends and family. I don't want to sound desperate because, honestly, I'm not, but I'd really appreciate <a href="https://twitter.com/pinkshardgames" target="blank">a follow on my twitter account</a>. Also, check out my new <a href="https://pinkshardgames.itch.io">itch.io</a>
+                  account, where I'll post information about the game! </p>
+                  <p>And that's all for this month! Thanks for reading!</p>
+            </div>
+          </div>
+          <div>
+ 
+          <div>
             <div id="headingOne">
               <h2 class="mb-0">
                 <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -54,7 +160,7 @@
               </h2>
             </div>
         
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div id="collapseOne" class="collapse collapsed" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="whiteText container">
                 <p>Hello, and thanks for reading the second devolepment post of Evertower Lite! July has been a busy month in which I added a lot of content. So, without further ado, let's review all the changes I've done!</p>
                 <h2>Shops</h2>
