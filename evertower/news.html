@@ -46,6 +46,115 @@
 
         <div class="accordion" id="accordionExample">
           <div>
+            <div id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  <h3 class="float-left enfasis">Polishment update</h3><h2 class="text-right enfasis">15/9/2020</h2><hr>
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="whiteText container">
+                <p>Hello, and welcome to the fourth devvlog of Evertower Lite! I've done a lot of progress this month, and the game's looking better than ever!!</p>
+                <h2>A new look to the game</h2>
+                <p>This is probably the coolest update so far. I've included an <span class="enfasis">lighting system</span> to the game! This improves the atmosphere a lot, and it makes the game way funnier to play, eventhough it doesn't change the gameplay at all.
+                I'm really proud of how good it looks!</p>
+                <img src="../pictures/fourht post/Screenshot_2020-09-15-12-02-49-905_com.PinkShardGames.Evertowerlite.jpg" class="w-100">
+                <img src="../pictures/fourht post/Screenshot_2020-09-15-12-02-56-381_com.PinkShardGames.Evertowerlite.jpg" class="w-100">
+                <p>This is not the only visual change to the game! I've also made a simple script which will shake the screen whenever a character takes damage, and another one which will display a damage popup. 
+                  <a href="https://twitter.com/pinkshardgames/status/1304408212490379265?s=20" target="blank">Here's a video showing how the new battle mode looks.</a>
+                </p>
+                <h2>Wait... there was music on that video!</h2>
+                <p>Yeah, there was!! I composed three simple pieces which will play during the game. There's a relaxing one (not shown on the video), which plays when you're not on a run. Then there's a simple one which plays when you are on a run. And then there's
+                  a <span class="enfasis">funkier, more upbeat version</span> of the dungeon theme which will play while battling. I think they're a nice addition!
+                </p>
+                <h2>A boss battle... Finally!</h2>
+                <p>I've finally had time to implement a <span class="enfasis">boss battle</span> to the game. It'll happen every two floors.</p>
+                <p>Along the boss battle, you'll find a machine which will restore half of your health and mana (only once), and a crafting table as well.</p>
+                <p>Right now, there's only one boss (Micke). Defeating it will grant you a <span class="enfasis"> big chest,</span> with twice as much loot as a normal chest, as well as a random legendary item.</p>
+                <p>Micke's got a great variety of spells. On each turn, he'll select one at random, from this pool:</p>
+                <ul>
+                  <li>
+                    A simple attack which will deal 50 damage.
+                  </li>
+                  <li>
+                    An attack which will deal 40 damage, and add a poisonous DOT which will deal an extra 20 damage over five turns 
+                  </li>
+                  <li>
+                    A spell which will give 60 Shield points to all its allies, as well as a 35% extra damage boost
+                  </li>
+                  <li>
+                    A spell which will deal 20 damage, and will explode all burns from its target, dealing it all DOT as instant damage, multiplied by 1,4. This attack becomes really powerful if you're poisoned.
+                  </li>
+                  <li>
+                    A spell which will make Micke <span class="enfasis">disappear,</span> summoning a <span class="enfasis">Ninjess,</span> a new minion type. Micke will appear again when the ninjess is defeated, gaining 40 shield points for each elapsed turn.
+                  </li>
+                </ul>
+                Micke will start the battle with a Ninjess minion. This minion has two different attacks:
+                <ul>
+                  <li>
+                    A poisonous attack, which will deal 30 damage, adding a 15 damage DOT over five turns.
+                  </li>
+                  <li>
+                    A simple attack which will deal 8 damage to its target a random ammount of times, between 2 and 5. (Min damage 16, max 40)
+                  </li>
+                </ul>
+                
+              </div>
+              <img src="../pictures/fourht post/WhatsApp Image 2020-09-15 at 18.03.01.jpeg" class="w-100">
+
+              <p>Micke's battle still needs a bit of polishment, however, it's playable and enjoyable as for now. There's <a href="https://twitter.com/pinkshardgames/status/1301491570794016768?s=20" target="blank"> a video on my twitter account </a>showing a battle agains him! Go check it out</p>
+
+              <h2>New spells!</h2>
+              <p>On the last post I mentioned that 11 new spells were coming to the game, but I only had time to implement three of them. Now they're all ready!!</p>
+              <ul>
+                <h3>Tempest spells</h3>
+                <li>
+                  <span class="enfasis">Static explosion:</span> A fast tempest spell which costs 20 mana. If you are shielded, you'll lose all your shield and deal as much True Damage to all enemies. Otherwise, you'll gain 20 Shield Points and this will return to your hand.
+                </li>
+                <h3>Fire spells</h3>
+                <li><span class="enfasis">Heatwave:</span> This spell will add a 60 DOT over three turns to all enemies. It costs 25 mana.</li>
+                <li><span class="enfasis">Weakpoint Attack:</span> This spell will explode all DOT from an enemy, dealing it 10 damage plus all the damage exploded. This costs 30 mana.</li>
+                <li><span class="enfasis">Flamethrower:</span> A more powerful version of <span class="enfasis">fireball,</span> which will deal 60 damage and add a 90 DOT over three turns. Flamethrower costs 40 mana.</li>
+                <h3>Water spells</h3>
+                <p>Oh yeah baby, a new element!! Water spells will specialize on freezing enemies and providing other utilities. <span class="enfasis">Frozen</span> enemies will skip their next turn</p>
+                <li><span class="enfasis">Freezing touch:</span> A fast water spell which costs 15 mana. It freezes an enemy.</li>
+                <li><span class="enfasis">Chilly wave:</span> This spell will deal 60 damage to an enemy and it'll also freeze it. It costs 30 mana. </li>
+                <li><span class="enfasis">Avalanche:</span> A water spell which will deal 40 damage to all enemies. This will deal twice as much damage to frozen targets. It costs 50 mana.</li>
+                <li><span class="enfasis">Water ring:</span> Water ring costs 50 mana, and it gives you 60 Shield Points. It also gives you a buff which will restore 20 health and mana at the start of each turn, for three turns. (This spell will have recovered 60 mana after three turns, granting you 60 Shield Points and 60 HP for free!)</li>
+              </ul>
+              <img src="../pictures/fourht post/spells 3.png" class="w-75 center notPixelated">
+              <h2>What to expect from future updates</h2>
+              <p>This was a really short post, but it doesn't mean that I took a relaxed month. I created my very first musical pieces and I added lights and postprocessing for the first time. I had a lot to learn this month, and I really enjoyed the ride.</p>
+              <p>Evertower Lite already looks like a somewhat decent game. However, there's still much more content to be included, but I'm getting really close to the first public version. Here's what I'll be working on next:</p>
+              <ul>
+                <li>
+                  Bug fixes!! With the creation of the new scene for the boss battle, I've also created some bugs that need to be fixed.
+                </li>
+                <li>
+                  I'm going to make Micke's battle harder. Right now, it could be a hard battle if he used its spells wisely. However, once you get to face him, its only a matter of five or six turns until you get him.
+                  I will probably make it so that he will cast his disappearing spell (the one that summons a minion) the first time he drops bellow 50% HP, and I'll probably make it gain shield faster, to make it a tougher battle. 
+                </li>
+                <li>
+                  Three new stats: <span class="enfasis">Critical hit chance</span>, <span class="enfasis">Critical hit damage</span> and <span class="enfasis">speed</span>.
+                </li>
+                <li>
+                  New basic items and new legendary items.
+                </li>
+                <li>
+                  A second enviroment, which should be accessible through the elevator, and unlocked after defeating Micke for the first time. The first enviroment is meant to be on the underground of the tower. This second enviroment would be the tower entrance. This sounds exciting, but it can take a while.
+                </li>
+                <li>
+                  A tutorial for the game, including story telling. This tutorial should take place at the top of the tower, so I must create a third enviroment for this.
+                </li>
+              </ul>
+              <p>When all those things are added, I could start talking about leaving the beta version, and maybe I could post my game.</p>
+              <p>I don't know if I'll be able to make it, but I want to leave the beta before the end of 2020. So, maybe, I could have a launchdate on December 15th, three months for now. I'm super excited!!</p>
+              <p>And finally, that was all for today. Remember to follow me on twitter to see much more frequent updates to the game. See you soon!!</p>
+            </div>
+          </div>
+          <div>
             <div id="headingThree">
               <h2 class="mb-0">
                 <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
@@ -54,7 +163,7 @@
               </h2>
             </div>
         
-            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div id="collapseThree" class="collapse collapsed" aria-labelledby="headingThree" data-parent="#accordionExample">
               <div class="whiteText container">
                 <p>Hello! I'm Carlos and you're reading the third development update of Evertower Lite. As I said in last post, this month has been way less intense than last one. 
                   Sadly, I couldn't implement all the things I wanted to yet, but I still made much progress. So, let's get started!
